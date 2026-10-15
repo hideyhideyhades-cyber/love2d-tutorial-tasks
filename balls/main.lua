@@ -1,3 +1,7 @@
+function love.load()
+    love.window.setFullscreen(true)
+end
+
 local Constructible = {
     __call = function (class, ...)
         return class.constructor(...)
